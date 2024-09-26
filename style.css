@@ -19,26 +19,31 @@ header{
 #link{
    
     display: flex;
-    justify-content: space-around;
-    height: 30px;
+    justify-content: space-between;
+    height: auto;
     width: 300px;
     align-items: center;
-    font-family: 'geomanist';
+    font-family: 'Geomanist';
     padding: 5px;
+    
+    
+    
 
 }
+
 .links > a{
     color: white;
-    transition: all 200ms;
+    transition: all 0.5s;
     font-size: 20px;
  
     
     
 }
-.links:hover > a{
+.links > a:hover{
     color: #0466c8;
-    transition: all 200ms;
+    transition: all 0.5s;
     font-size: 22px;
+  
     
 }
 header > h3{
@@ -173,7 +178,7 @@ grid-template-rows: repeat(5, 1fr);
 
 }
 #sobrescratch > a > img{
-    width: 400px;
+    width: 320px;
     border-radius: 20px;
     grid-row: 1 / 5;
     grid-column: 5 / 6;
@@ -181,9 +186,13 @@ grid-template-rows: repeat(5, 1fr);
     box-shadow: 5px 0px 5px 1px gray;
 }
 #sobrescratch > a > img:hover{
-    width: 410px;
+    width: 350px;
     transition: all 400ms;
+    box-shadow: 0px 10px 10px 5px gray;
 
+}
+#sobrescratch img{
+    position: absolute;
 }
 #sobrescratch > a {
     grid-row: 1 / 5;
@@ -199,7 +208,7 @@ grid-template-rows: repeat(5, 1fr);
 }
 #sobrescratch > p{
     grid-row: 2 / 5;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Arial';
    
     grid-column: 1 / 4;
@@ -211,7 +220,36 @@ grid-template-rows: repeat(5, 1fr);
     color: white;
     -webkit-text-stroke-color: #ff6600;
 }
+#jogos{
+    width: 100%;
+    vertical-align: ;
+    background-color: #000814;
+    display: grid;
+    
 
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    padding: 30px;
+    gap: 30px;
+   
+    
+    
+
+}
+#jogos > h1{
+    grid-column: 1 / 6;
+    grid-row: 1 /2 ;
+}
+.games{
+    background-color: #e5e5e5;
+    height: 400px;
+    width: 250px;
+    
+
+    
+
+}
 
 
 
